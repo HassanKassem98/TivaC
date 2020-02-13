@@ -2,7 +2,7 @@
  * App_GPIO.c
  *
  *  Created on: Feb 13, 2020
- *      Author: hassa
+ *      Author: hassan
  */
 #include "App_GPIO.h"
 
