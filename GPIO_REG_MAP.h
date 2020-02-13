@@ -2,7 +2,7 @@
  * Register_Map.h
  *
  *  Created on: Feb 12, 2020
- *      Author: hassa
+ *      Author: hassan
  */
 
 #ifndef GPIO_REG_MAP_H_
