@@ -2,7 +2,7 @@
  * Types.h
  *
  *  Created on: Feb 13, 2020
- *      Author: hassa
+ *      Author: hassan
  */
 
 #ifndef TYPES_H_
