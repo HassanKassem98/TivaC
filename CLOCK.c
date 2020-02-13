@@ -31,7 +31,7 @@ CLOCK_ERROR_T ENABLE_CLOCK(CLOCK_MODULE_T MODULE)
 
         WRITE_REG_BIT(RCGCGPIO,0,4);
      }
-    else if (MODULE == GPIO_E )
+    else if (MODULE == GPIO_F )
     {
 
         WRITE_REG_BIT(RCGCGPIO,0,5);
