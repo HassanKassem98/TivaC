@@ -2,7 +2,7 @@
  * App_GPIO.h
  *
  *  Created on: Feb 13, 2020
- *      Author: hassa
+ *      Author: hassan
  */
 
 #ifndef APP_GPIO_H_
