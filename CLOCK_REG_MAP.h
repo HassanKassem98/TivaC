@@ -2,7 +2,7 @@
  * CLOCK.H
  *
  *  Created on: Feb 13, 2020
- *      Author: hassa
+ *      Author: hassan
  */
 
 #ifndef CLOCK_REG_MAP_H_
