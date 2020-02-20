@@ -65,11 +65,11 @@ GPIO_ERROR_T CONFIG_PAD( uint32 BASE , GPIO_PAD_CONFIG_T *Object)
     {
         if ( Object -> Alternative_Fun == TRUE)
         {
-            WRITE_REG_32BIT( (BASE + GPIO_ALTERNATIVE_FUNCTION_SELECT_OFFSET));
+            WRITE_REG_32BIT( (BASE + GPIO_ALTERNATIVE_FUNCTION_SELECT_OFFSET), 0xFF);
         }
         else if ( Object -> Alternative_Fun == FALSE)
         {
-            WRITE_REG_32BIT( (BASE + GPIO_ALTERNATIVE_FUNCTION_SELECT_OFFSET));
+            WRITE_REG_32BIT( (BASE + GPIO_ALTERNATIVE_FUNCTION_SELECT_OFFSET), 0x00);
         }
         else
         {
