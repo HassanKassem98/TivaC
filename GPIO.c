@@ -56,7 +56,7 @@ GPIO_ERROR_T READ_PORT( uint32 BASE , uint8* VALUE )
     return STATE;
 }
 
-GPIO_ERROR_T CONFIG_PAD( uint32 BASE , GPIO_PAD_CONFIG_T *Object , uint8 pin)
+GPIO_ERROR_T CONFIG_PAD( uint32 BASE , GPIO_PAD_CONFIG_T *Object)
 {
     GPIO_ERROR_T  STATE = PASS;
 
@@ -65,11 +65,11 @@ GPIO_ERROR_T CONFIG_PAD( uint32 BASE , GPIO_PAD_CONFIG_T *Object , uint8 pin)
     {
         if ( Object -> Alternative_Fun == TRUE)
         {
-            WRITE_REG_32BIT( (BASE + GPIO_ALTERNATIVE_FUNCTION_SELECT_OFFSET) , (1 << pin) );
+            WRITE_REG_32BIT( (BASE + GPIO_ALTERNATIVE_FUNCTION_SELECT_OFFSET));
         }
         else if ( Object -> Alternative_Fun == FALSE)
         {
-            WRITE_REG_32BIT( (BASE + GPIO_ALTERNATIVE_FUNCTION_SELECT_OFFSET) , (0 << pin) );
+            WRITE_REG_32BIT( (BASE + GPIO_ALTERNATIVE_FUNCTION_SELECT_OFFSET));
         }
         else
         {
